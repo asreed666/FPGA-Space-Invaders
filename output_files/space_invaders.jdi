@@ -1,9 +1,9 @@
 <sld_project_info>
   <project>
-    <hash md5_digest_80b="618bb1d47c3b250498e4"/>
+    <hash md5_digest_80b="7e29c68b0e3c68b644e9"/>
   </project>
   <file_info>
-    <file device="EP4CE115F29C7" path="space_invaders.sof" usercode="0xFFFFFFFF"/>
+    <file device="10M50DAF484C6GES" path="space_invaders.sof" usercode="0xFFFFFFFF"/>
   </file_info>
   <hub_info hub_ir_width="5" ir_width="2" node_addr_width="2" node_count="2"/>
   <node_info>
@@ -139,7 +139,7 @@
   <sld_infos>
     <sld_info hpath="nios_system:nios_system" name="nios_system">
       <assignment_values>
-        <assignment_value text="QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1554763823"/>
+        <assignment_value text="QSYS_NAME nios_system HAS_SOPCINFO 1 GENERATION_ID 1745506750"/>
       </assignment_values>
       <parameters/>
     </sld_info>

@@ -1,0 +1,440 @@
+IP Upgrade report for space_invaders
+Thu Apr 24 15:59:33 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. IP Upgrade Summary
+  3. Successfully Upgraded IP Components
+  4. IP Upgrade Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++----------------------------------------------------------------------------+
+; IP Upgrade Summary                                                         ;
++------------------------------+---------------------------------------------+
+; IP Components Upgrade Status ; Passed - Thu Apr 24 15:59:33 2025           ;
+; Quartus Prime Version        ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
+; Revision Name                ; space_invaders                              ;
+; Top-level Entity Name        ; space_invaders                              ;
+; Family                       ; Cyclone IV E                                ;
++------------------------------+---------------------------------------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Successfully Upgraded IP Components                                                                                                                     ;
++-------------+----------------+---------+---------------------------------------+----------------------+---------------------------------------+---------+
+; Entity Name ; Component Name ; Version ; Original Source File                  ; Generation File Path ; New Source File                       ; Message ;
++-------------+----------------+---------+---------------------------------------+----------------------+---------------------------------------+---------+
+; nios_system ; Qsys           ; 18.0    ; nios_system/synthesis/nios_system.qip ; nios_system.qsys     ; nios_system/synthesis/nios_system.qip ;         ;
+; vga_clk     ; ALTPLL         ; 15.0    ; vga_clk.qip                           ; vga_clk.v            ; vga_clk.qip                           ;         ;
++-------------+----------------+---------+---------------------------------------+----------------------+---------------------------------------+---------+
+
+
++---------------------+
+; IP Upgrade Messages ;
++---------------------+
+Info (11902): Backing up file "nios_system.qsys" to "nios_system.BAK.qsys"
+Info (11902): Backing up file "nios_system/synthesis/nios_system.v" to "nios_system.BAK.v"
+Info (11837): Started upgrading IP component Qsys with file "nios_system.qsys"
+Info: 2025.04.24.15:58:29 Info: Starting to upgrade the IP cores in the Platform Designer system
+Info: 2025.04.24.15:58:29 Info: Finished upgrading the ip cores
+Info: 2025.04.24.15:58:34 Info: Saving generation log to D:/GitHub/FPGA-Space-Invaders/nios_system
+Info: 2025.04.24.15:58:34 Info: Starting: Create simulation model
+Info: 2025.04.24.15:58:34 Info: qsys-generate D:\GitHub\FPGA-Space-Invaders\nios_system.qsys --simulation=VERILOG --allow-mixed-language-simulation --output-directory=D:\GitHub\FPGA-Space-Invaders\nios_system\simulation --family="Cyclone IV E" --part=EP4CE115F29C7
+Info: 2025.04.24.15:58:34 Info: Loading FPGA-Space-Invaders
+Info: 2025.04.24.15:58:35 Info: Reading input file
+Info: 2025.04.24.15:58:35 Info: Adding clk_0 [clock_source 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module clk_0
+Info: 2025.04.24.15:58:35 Info: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module jtag_uart_0
+Info: 2025.04.24.15:58:35 Info: Adding keycode [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module keycode
+Info: 2025.04.24.15:58:35 Info: Adding keys [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module keys
+Info: 2025.04.24.15:58:35 Info: Adding led [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module led
+Info: 2025.04.24.15:58:35 Info: Adding ledr [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module ledr
+Info: 2025.04.24.15:58:35 Info: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module nios2_gen2_0
+Info: 2025.04.24.15:58:35 Info: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module onchip_memory2_0
+Info: 2025.04.24.15:58:35 Info: Adding otg_hpi_address [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module otg_hpi_address
+Info: 2025.04.24.15:58:35 Info: Adding otg_hpi_cs [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module otg_hpi_cs
+Info: 2025.04.24.15:58:35 Info: Adding otg_hpi_data [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module otg_hpi_data
+Info: 2025.04.24.15:58:35 Info: Adding otg_hpi_r [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module otg_hpi_r
+Info: 2025.04.24.15:58:35 Info: Adding otg_hpi_reset [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module otg_hpi_reset
+Info: 2025.04.24.15:58:35 Info: Adding otg_hpi_w [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module otg_hpi_w
+Info: 2025.04.24.15:58:35 Info: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module sdram
+Info: 2025.04.24.15:58:35 Info: Adding sdram_pll [altpll 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module sdram_pll
+Info: 2025.04.24.15:58:35 Info: Adding switches [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module switches
+Info: 2025.04.24.15:58:35 Info: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 20.1]
+Info: 2025.04.24.15:58:35 Info: Parameterizing module sysid_qsys_0
+Info: 2025.04.24.15:58:35 Info: Building connections
+Info: 2025.04.24.15:58:35 Info: Parameterizing connections
+Info: 2025.04.24.15:58:35 Info: Validating
+Info: 2025.04.24.15:58:35 Info: Done reading input file
+Info: 2025.04.24.15:58:36 Info: nios_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2025.04.24.15:58:36 Info: nios_system.keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2025.04.24.15:58:36 Info: nios_system.otg_hpi_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2025.04.24.15:58:36 Info: nios_system.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: 2025.04.24.15:58:36 Info: nios_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2025.04.24.15:58:36 Info: nios_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: 2025.04.24.15:58:36 Info: nios_system: Generating nios_system "nios_system" for SIM_VERILOG
+Info: 2025.04.24.15:58:38 Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: 2025.04.24.15:58:38 Info: Inserting clock-crossing logic between cmd_demux_001.src4 and cmd_mux_005.sink1
+Info: 2025.04.24.15:58:38 Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: 2025.04.24.15:58:38 Info: Inserting clock-crossing logic between rsp_demux_005.src1 and rsp_mux_001.sink4
+Info: 2025.04.24.15:58:41 Info: jtag_uart_0: Starting RTL generation for module 'nios_system_jtag_uart_0'
+Info: 2025.04.24.15:58:41 Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0002_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0002_jtag_uart_0_gen//nios_system_jtag_uart_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0002_jtag_uart_0_gen
+Info: 2025.04.24.15:58:42 Info: jtag_uart_0: Done RTL generation for module 'nios_system_jtag_uart_0'
+Info: 2025.04.24.15:58:42 Info: jtag_uart_0: "nios_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: 2025.04.24.15:58:42 Info: keycode: Starting RTL generation for module 'nios_system_keycode'
+Info: 2025.04.24.15:58:42 Info: keycode:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_keycode --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0003_keycode_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0003_keycode_gen//nios_system_keycode_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0003_keycode_gen
+Info: 2025.04.24.15:58:42 Info: keycode: Done RTL generation for module 'nios_system_keycode'
+Info: 2025.04.24.15:58:42 Info: keycode: "nios_system" instantiated altera_avalon_pio "keycode"
+Info: 2025.04.24.15:58:42 Info: keys: Starting RTL generation for module 'nios_system_keys'
+Info: 2025.04.24.15:58:42 Info: keys:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_keys --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0004_keys_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0004_keys_gen//nios_system_keys_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0004_keys_gen
+Info: 2025.04.24.15:58:42 Info: keys: Done RTL generation for module 'nios_system_keys'
+Info: 2025.04.24.15:58:42 Info: keys: "nios_system" instantiated altera_avalon_pio "keys"
+Info: 2025.04.24.15:58:42 Info: nios2_gen2_0: "nios_system" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: 2025.04.24.15:58:42 Info: onchip_memory2_0: Starting RTL generation for module 'nios_system_onchip_memory2_0'
+Info: 2025.04.24.15:58:42 Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_onchip_memory2_0 --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0005_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0005_onchip_memory2_0_gen//nios_system_onchip_memory2_0_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0005_onchip_memory2_0_gen
+Info: 2025.04.24.15:58:43 Info: onchip_memory2_0: Done RTL generation for module 'nios_system_onchip_memory2_0'
+Info: 2025.04.24.15:58:43 Info: onchip_memory2_0: "nios_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: 2025.04.24.15:58:43 Info: otg_hpi_address: Starting RTL generation for module 'nios_system_otg_hpi_address'
+Info: 2025.04.24.15:58:43 Info: otg_hpi_address:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_otg_hpi_address --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0006_otg_hpi_address_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0006_otg_hpi_address_gen//nios_system_otg_hpi_address_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0006_otg_hpi_address_gen
+Info: 2025.04.24.15:58:43 Info: otg_hpi_address: Done RTL generation for module 'nios_system_otg_hpi_address'
+Info: 2025.04.24.15:58:43 Info: otg_hpi_address: "nios_system" instantiated altera_avalon_pio "otg_hpi_address"
+Info: 2025.04.24.15:58:43 Info: otg_hpi_cs: Starting RTL generation for module 'nios_system_otg_hpi_cs'
+Info: 2025.04.24.15:58:43 Info: otg_hpi_cs:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_otg_hpi_cs --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0007_otg_hpi_cs_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0007_otg_hpi_cs_gen//nios_system_otg_hpi_cs_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0007_otg_hpi_cs_gen
+Info: 2025.04.24.15:58:43 Info: otg_hpi_cs: Done RTL generation for module 'nios_system_otg_hpi_cs'
+Info: 2025.04.24.15:58:43 Info: otg_hpi_cs: "nios_system" instantiated altera_avalon_pio "otg_hpi_cs"
+Info: 2025.04.24.15:58:43 Info: otg_hpi_data: Starting RTL generation for module 'nios_system_otg_hpi_data'
+Info: 2025.04.24.15:58:43 Info: otg_hpi_data:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_otg_hpi_data --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0008_otg_hpi_data_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0008_otg_hpi_data_gen//nios_system_otg_hpi_data_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0008_otg_hpi_data_gen
+Info: 2025.04.24.15:58:43 Info: otg_hpi_data: Done RTL generation for module 'nios_system_otg_hpi_data'
+Info: 2025.04.24.15:58:43 Info: otg_hpi_data: "nios_system" instantiated altera_avalon_pio "otg_hpi_data"
+Info: 2025.04.24.15:58:43 Info: sdram: Starting RTL generation for module 'nios_system_sdram'
+Info: 2025.04.24.15:58:43 Info: sdram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios_system_sdram --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0009_sdram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0009_sdram_gen//nios_system_sdram_component_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0009_sdram_gen
+Info: 2025.04.24.15:58:43 Info: sdram: Done RTL generation for module 'nios_system_sdram'
+Info: 2025.04.24.15:58:43 Info: sdram: "nios_system" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: 2025.04.24.15:58:44 Info: sdram_pll: Generating Verilog simulation model
+Warning: 2025.04.24.15:58:52 Warning: Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info: 2025.04.24.15:58:52 Info: sdram_pll: Generated simulation model nios_system_sdram_pll.vo
+Info: 2025.04.24.15:58:52 Info: sdram_pll: "nios_system" instantiated altpll "sdram_pll"
+Info: 2025.04.24.15:58:52 Info: sysid_qsys_0: "nios_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: 2025.04.24.15:58:57 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:57 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:58 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:58 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:58 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:58 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:59 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:59 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:58:59 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:00 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:00 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:00 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:00 Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:01 Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:05 Info: mm_interconnect_0: "nios_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2025.04.24.15:59:05 Info: irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2025.04.24.15:59:05 Info: rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info: 2025.04.24.15:59:05 Info: cpu: Starting RTL generation for module 'nios_system_nios2_gen2_0_cpu'
+Info: 2025.04.24.15:59:05 Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=nios_system_nios2_gen2_0_cpu --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0017_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0017_cpu_gen//nios_system_nios2_gen2_0_cpu_processor_configuration.pl  --do_build_sim=1    --sim_dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0017_cpu_gen
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:05 (*) Starting Nios II generation
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:05 (*)   Elaborating CPU configuration settings
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:05 (*)   Creating all objects for CPU
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:06 (*)   Creating 'C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0017_cpu_gen/
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:06 (*)   Generating RTL from CPU objects
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:06 (*)   Creating plain-text RTL
+Info: 2025.04.24.15:59:06 Info: cpu: # 2025.04.24 15:59:06 (*) Done Nios II generation
+Info: 2025.04.24.15:59:06 Info: cpu: Done RTL generation for module 'nios_system_nios2_gen2_0_cpu'
+Info: 2025.04.24.15:59:06 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: 2025.04.24.15:59:06 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: 2025.04.24.15:59:06 Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: 2025.04.24.15:59:06 Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: 2025.04.24.15:59:06 Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: 2025.04.24.15:59:06 Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: 2025.04.24.15:59:06 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2025.04.24.15:59:06 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2025.04.24.15:59:06 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2025.04.24.15:59:06 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2025.04.24.15:59:06 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2025.04.24.15:59:06 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2025.04.24.15:59:06 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2025.04.24.15:59:06 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2025.04.24.15:59:06 Info: Reusing file D:/GitHub/FPGA-Space-Invaders/nios_system/simulation/submodules
+Info: 2025.04.24.15:59:06 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2025.04.24.15:59:06 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2025.04.24.15:59:06 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2025.04.24.15:59:06 Info: Reusing file D:/GitHub/FPGA-Space-Invaders/nios_system/simulation/submodules
+Info: 2025.04.24.15:59:06 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2025.04.24.15:59:06 Info: Reusing file D:/GitHub/FPGA-Space-Invaders/nios_system/simulation/submodules
+Info: 2025.04.24.15:59:06 Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: 2025.04.24.15:59:07 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2025.04.24.15:59:07 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2025.04.24.15:59:07 Info: nios_system: Done "nios_system" with 36 modules, 60 files
+Info: 2025.04.24.15:59:07 Info: qsys-generate succeeded.
+Info: 2025.04.24.15:59:07 Info: Finished: Create simulation model
+Info: 2025.04.24.15:59:07 Info: Starting: Create Modelsim Project.
+Info: 2025.04.24.15:59:07 Info: sim-script-gen --spd=D:\GitHub\FPGA-Space-Invaders\nios_system\nios_system.spd --output-directory=D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info: Doing: ip-make-simscript --spd=D:\GitHub\FPGA-Space-Invaders\nios_system\nios_system.spd --output-directory=D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info: Generating the following file(s) for MODELSIM simulator in D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info:     mentor
+Info: 2025.04.24.15:59:07 Info: Generating the following file(s) for VCS simulator in D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info:     synopsys/vcs
+Info: 2025.04.24.15:59:07 Info: Generating the following file(s) for VCSMX simulator in D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info:     synopsys/vcsmx
+Info: 2025.04.24.15:59:07 Info:     synopsys/vcsmx
+Info: 2025.04.24.15:59:07 Info: Generating the following file(s) for NCSIM simulator in D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info:     cadence
+Info: 2025.04.24.15:59:07 Info:     cadence
+Info: 2025.04.24.15:59:07 Info:     cadence
+Info: 2025.04.24.15:59:07 Info:     35 .cds.lib files in cadence/cds_libs
+Info: 2025.04.24.15:59:07 Info: Generating the following file(s) for RIVIERA simulator in D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info:     aldec
+Info: 2025.04.24.15:59:07 Info: For information on how to simulate your IP, see the explanatory comments in the simulator-specific subdirectories under D:/GitHub/FPGA-Space-Invaders/nios_system/simulation
+Info: 2025.04.24.15:59:07 Info: Regenerate these scripts whenever you make any change to any Quartus-generated IP in your project.
+Info: 2025.04.24.15:59:07 Info: Finished: Create Modelsim Project.
+Info: 2025.04.24.15:59:07 Info: Starting: Create block symbol file (.bsf)
+Info: 2025.04.24.15:59:07 Info: qsys-generate D:\GitHub\FPGA-Space-Invaders\nios_system.qsys --block-symbol-file --output-directory=D:\GitHub\FPGA-Space-Invaders\nios_system --family="Cyclone IV E" --part=EP4CE115F29C7
+Info: 2025.04.24.15:59:07 Info: Loading FPGA-Space-Invaders
+Info: 2025.04.24.15:59:08 Info: Reading input file
+Info: 2025.04.24.15:59:08 Info: Adding clk_0 [clock_source 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module clk_0
+Info: 2025.04.24.15:59:08 Info: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module jtag_uart_0
+Info: 2025.04.24.15:59:08 Info: Adding keycode [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module keycode
+Info: 2025.04.24.15:59:08 Info: Adding keys [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module keys
+Info: 2025.04.24.15:59:08 Info: Adding led [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module led
+Info: 2025.04.24.15:59:08 Info: Adding ledr [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module ledr
+Info: 2025.04.24.15:59:08 Info: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module nios2_gen2_0
+Info: 2025.04.24.15:59:08 Info: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module onchip_memory2_0
+Info: 2025.04.24.15:59:08 Info: Adding otg_hpi_address [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module otg_hpi_address
+Info: 2025.04.24.15:59:08 Info: Adding otg_hpi_cs [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module otg_hpi_cs
+Info: 2025.04.24.15:59:08 Info: Adding otg_hpi_data [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module otg_hpi_data
+Info: 2025.04.24.15:59:08 Info: Adding otg_hpi_r [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module otg_hpi_r
+Info: 2025.04.24.15:59:08 Info: Adding otg_hpi_reset [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module otg_hpi_reset
+Info: 2025.04.24.15:59:08 Info: Adding otg_hpi_w [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module otg_hpi_w
+Info: 2025.04.24.15:59:08 Info: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module sdram
+Info: 2025.04.24.15:59:08 Info: Adding sdram_pll [altpll 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module sdram_pll
+Info: 2025.04.24.15:59:08 Info: Adding switches [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module switches
+Info: 2025.04.24.15:59:08 Info: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 20.1]
+Info: 2025.04.24.15:59:08 Info: Parameterizing module sysid_qsys_0
+Info: 2025.04.24.15:59:08 Info: Building connections
+Info: 2025.04.24.15:59:08 Info: Parameterizing connections
+Info: 2025.04.24.15:59:08 Info: Validating
+Info: 2025.04.24.15:59:08 Info: Done reading input file
+Info: 2025.04.24.15:59:09 Info: nios_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2025.04.24.15:59:09 Info: nios_system.keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2025.04.24.15:59:09 Info: nios_system.otg_hpi_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2025.04.24.15:59:09 Info: nios_system.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: 2025.04.24.15:59:09 Info: nios_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2025.04.24.15:59:09 Info: nios_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: 2025.04.24.15:59:09 Info: qsys-generate succeeded.
+Info: 2025.04.24.15:59:09 Info: Finished: Create block symbol file (.bsf)
+Info: 2025.04.24.15:59:09 Info:
+Info: 2025.04.24.15:59:09 Info: Starting: Create HDL design files for synthesis
+Info: 2025.04.24.15:59:09 Info: qsys-generate D:\GitHub\FPGA-Space-Invaders\nios_system.qsys --synthesis=VERILOG --output-directory=D:\GitHub\FPGA-Space-Invaders\nios_system\synthesis --family="Cyclone IV E" --part=EP4CE115F29C7
+Info: 2025.04.24.15:59:09 Info: Loading FPGA-Space-Invaders
+Info: 2025.04.24.15:59:09 Info: Reading input file
+Info: 2025.04.24.15:59:09 Info: Adding clk_0 [clock_source 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module clk_0
+Info: 2025.04.24.15:59:09 Info: Adding jtag_uart_0 [altera_avalon_jtag_uart 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module jtag_uart_0
+Info: 2025.04.24.15:59:09 Info: Adding keycode [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module keycode
+Info: 2025.04.24.15:59:09 Info: Adding keys [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module keys
+Info: 2025.04.24.15:59:09 Info: Adding led [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module led
+Info: 2025.04.24.15:59:09 Info: Adding ledr [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module ledr
+Info: 2025.04.24.15:59:09 Info: Adding nios2_gen2_0 [altera_nios2_gen2 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module nios2_gen2_0
+Info: 2025.04.24.15:59:09 Info: Adding onchip_memory2_0 [altera_avalon_onchip_memory2 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module onchip_memory2_0
+Info: 2025.04.24.15:59:09 Info: Adding otg_hpi_address [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module otg_hpi_address
+Info: 2025.04.24.15:59:09 Info: Adding otg_hpi_cs [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module otg_hpi_cs
+Info: 2025.04.24.15:59:09 Info: Adding otg_hpi_data [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module otg_hpi_data
+Info: 2025.04.24.15:59:09 Info: Adding otg_hpi_r [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module otg_hpi_r
+Info: 2025.04.24.15:59:09 Info: Adding otg_hpi_reset [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module otg_hpi_reset
+Info: 2025.04.24.15:59:09 Info: Adding otg_hpi_w [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module otg_hpi_w
+Info: 2025.04.24.15:59:09 Info: Adding sdram [altera_avalon_new_sdram_controller 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module sdram
+Info: 2025.04.24.15:59:09 Info: Adding sdram_pll [altpll 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module sdram_pll
+Info: 2025.04.24.15:59:09 Info: Adding switches [altera_avalon_pio 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module switches
+Info: 2025.04.24.15:59:09 Info: Adding sysid_qsys_0 [altera_avalon_sysid_qsys 20.1]
+Info: 2025.04.24.15:59:09 Info: Parameterizing module sysid_qsys_0
+Info: 2025.04.24.15:59:09 Info: Building connections
+Info: 2025.04.24.15:59:09 Info: Parameterizing connections
+Info: 2025.04.24.15:59:09 Info: Validating
+Info: 2025.04.24.15:59:10 Info: Done reading input file
+Info: 2025.04.24.15:59:10 Info: nios_system.jtag_uart_0: JTAG UART IP input clock need to be at least double (2x) the operating frequency of JTAG TCK on board
+Info: 2025.04.24.15:59:10 Info: nios_system.keys: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2025.04.24.15:59:10 Info: nios_system.otg_hpi_data: PIO inputs are not hardwired in test bench. Undefined values will be read from PIO inputs during simulation.
+Info: 2025.04.24.15:59:10 Info: nios_system.sdram: SDRAM Controller will only be supported in Quartus Prime Standard Edition in the future release.
+Info: 2025.04.24.15:59:10 Info: nios_system.sysid_qsys_0: System ID is not assigned automatically. Edit the System ID parameter to provide a unique ID
+Info: 2025.04.24.15:59:10 Info: nios_system.sysid_qsys_0: Time stamp will be automatically updated when this component is generated.
+Info: 2025.04.24.15:59:11 Info: nios_system: Generating nios_system "nios_system" for QUARTUS_SYNTH
+Info: 2025.04.24.15:59:12 Info: Inserting clock-crossing logic between cmd_demux.src5 and cmd_mux_005.sink0
+Info: 2025.04.24.15:59:12 Info: Inserting clock-crossing logic between cmd_demux_001.src4 and cmd_mux_005.sink1
+Info: 2025.04.24.15:59:12 Info: Inserting clock-crossing logic between rsp_demux_005.src0 and rsp_mux.sink5
+Info: 2025.04.24.15:59:12 Info: Inserting clock-crossing logic between rsp_demux_005.src1 and rsp_mux_001.sink4
+Info: 2025.04.24.15:59:14 Info: jtag_uart_0: Starting RTL generation for module 'nios_system_jtag_uart_0'
+Info: 2025.04.24.15:59:14 Info: jtag_uart_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_jtag_uart/generate_rtl.pl --name=nios_system_jtag_uart_0 --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0038_jtag_uart_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0038_jtag_uart_0_gen/
+Info: 2025.04.24.15:59:14 Info: jtag_uart_0: Done RTL generation for module 'nios_system_jtag_uart_0'
+Info: 2025.04.24.15:59:14 Info: jtag_uart_0: "nios_system" instantiated altera_avalon_jtag_uart "jtag_uart_0"
+Info: 2025.04.24.15:59:14 Info: keycode: Starting RTL generation for module 'nios_system_keycode'
+Info: 2025.04.24.15:59:14 Info: keycode:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_keycode --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0039_keycode_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0039_keycode_gen/
+Info: 2025.04.24.15:59:14 Info: keycode: Done RTL generation for module 'nios_system_keycode'
+Info: 2025.04.24.15:59:14 Info: keycode: "nios_system" instantiated altera_avalon_pio "keycode"
+Info: 2025.04.24.15:59:15 Info: keys: Starting RTL generation for module 'nios_system_keys'
+Info: 2025.04.24.15:59:15 Info: keys:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_keys --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0040_keys_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0040_keys_gen/
+Info: 2025.04.24.15:59:15 Info: keys: Done RTL generation for module 'nios_system_keys'
+Info: 2025.04.24.15:59:15 Info: keys: "nios_system" instantiated altera_avalon_pio "keys"
+Info: 2025.04.24.15:59:15 Info: nios2_gen2_0: "nios_system" instantiated altera_nios2_gen2 "nios2_gen2_0"
+Info: 2025.04.24.15:59:15 Info: onchip_memory2_0: Starting RTL generation for module 'nios_system_onchip_memory2_0'
+Info: 2025.04.24.15:59:15 Info: onchip_memory2_0:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_onchip_memory2/generate_rtl.pl --name=nios_system_onchip_memory2_0 --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0041_onchip_memory2_0_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0041_onchip_memory2_0_gen/
+Info: 2025.04.24.15:59:15 Info: onchip_memory2_0: Done RTL generation for module 'nios_system_onchip_memory2_0'
+Info: 2025.04.24.15:59:15 Info: onchip_memory2_0: "nios_system" instantiated altera_avalon_onchip_memory2 "onchip_memory2_0"
+Info: 2025.04.24.15:59:15 Info: otg_hpi_address: Starting RTL generation for module 'nios_system_otg_hpi_address'
+Info: 2025.04.24.15:59:15 Info: otg_hpi_address:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_otg_hpi_address --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0042_otg_hpi_address_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0042_otg_hpi_address_gen/
+Info: 2025.04.24.15:59:16 Info: otg_hpi_address: Done RTL generation for module 'nios_system_otg_hpi_address'
+Info: 2025.04.24.15:59:16 Info: otg_hpi_address: "nios_system" instantiated altera_avalon_pio "otg_hpi_address"
+Info: 2025.04.24.15:59:16 Info: otg_hpi_cs: Starting RTL generation for module 'nios_system_otg_hpi_cs'
+Info: 2025.04.24.15:59:16 Info: otg_hpi_cs:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_otg_hpi_cs --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0043_otg_hpi_cs_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0043_otg_hpi_cs_gen/
+Info: 2025.04.24.15:59:16 Info: otg_hpi_cs: Done RTL generation for module 'nios_system_otg_hpi_cs'
+Info: 2025.04.24.15:59:16 Info: otg_hpi_cs: "nios_system" instantiated altera_avalon_pio "otg_hpi_cs"
+Info: 2025.04.24.15:59:16 Info: otg_hpi_data: Starting RTL generation for module 'nios_system_otg_hpi_data'
+Info: 2025.04.24.15:59:16 Info: otg_hpi_data:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_pio/generate_rtl.pl --name=nios_system_otg_hpi_data --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0044_otg_hpi_data_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0044_otg_hpi_data_gen/
+Info: 2025.04.24.15:59:16 Info: otg_hpi_data: Done RTL generation for module 'nios_system_otg_hpi_data'
+Info: 2025.04.24.15:59:16 Info: otg_hpi_data: "nios_system" instantiated altera_avalon_pio "otg_hpi_data"
+Info: 2025.04.24.15:59:16 Info: sdram: Starting RTL generation for module 'nios_system_sdram'
+Info: 2025.04.24.15:59:16 Info: sdram:   Generation command is [exec C:/intelfpga_lite/20.1/quartus/bin64/perl/bin/perl.exe -I C:/intelfpga_lite/20.1/quartus/bin64/perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/common -I C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller -- C:/intelfpga_lite/20.1/quartus/../ip/altera/sopc_builder_ip/altera_avalon_new_sdram_controller/generate_rtl.pl --name=nios_system_sdram --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0045_sdram_gen/ --quartus_dir=C:/intelfpga_lite/20.1/quartus --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0045_sdram_gen/
+Info: 2025.04.24.15:59:16 Info: sdram: Done RTL generation for module 'nios_system_sdram'
+Info: 2025.04.24.15:59:16 Info: sdram: "nios_system" instantiated altera_avalon_new_sdram_controller "sdram"
+Info: 2025.04.24.15:59:17 Info: sdram_pll: "nios_system" instantiated altpll "sdram_pll"
+Info: 2025.04.24.15:59:17 Info: sysid_qsys_0: "nios_system" instantiated altera_avalon_sysid_qsys "sysid_qsys_0"
+Info: 2025.04.24.15:59:22 Info: avalon_st_adapter: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:23 Info: avalon_st_adapter_001: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:23 Info: avalon_st_adapter_002: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:23 Info: avalon_st_adapter_003: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:23 Info: avalon_st_adapter_004: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:24 Info: avalon_st_adapter_005: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:24 Info: avalon_st_adapter_006: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:24 Info: avalon_st_adapter_007: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:24 Info: avalon_st_adapter_008: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:25 Info: avalon_st_adapter_009: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:25 Info: avalon_st_adapter_010: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:25 Info: avalon_st_adapter_011: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:26 Info: avalon_st_adapter_012: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:26 Info: avalon_st_adapter_013: Inserting error_adapter: error_adapter_0
+Info: 2025.04.24.15:59:30 Info: mm_interconnect_0: "nios_system" instantiated altera_mm_interconnect "mm_interconnect_0"
+Info: 2025.04.24.15:59:30 Info: irq_mapper: "nios_system" instantiated altera_irq_mapper "irq_mapper"
+Info: 2025.04.24.15:59:30 Info: rst_controller: "nios_system" instantiated altera_reset_controller "rst_controller"
+Info: 2025.04.24.15:59:30 Info: cpu: Starting RTL generation for module 'nios_system_nios2_gen2_0_cpu'
+Info: 2025.04.24.15:59:30 Info: cpu:   Generation command is [exec C:/intelFPGA_lite/20.1/quartus/bin64//perl/bin/perl.exe -I C:/intelFPGA_lite/20.1/quartus/bin64//perl/lib -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin/europa -I C:/intelfpga_lite/20.1/quartus/sopc_builder/bin -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/cpu_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/nios_lib -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -I C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2 -- C:/intelfpga_lite/20.1/quartus/../ip/altera/nios2_ip/altera_nios2_gen2/generate_rtl.pl --name=nios_system_nios2_gen2_0_cpu --dir=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0051_cpu_gen/ --quartus_bindir=C:/intelFPGA_lite/20.1/quartus/bin64/ --verilog --config=C:/Users/areed/AppData/Local/Temp/alt0202_751245669814557813.dir/0051_cpu_gen/
+Info: 2025.04.24.15:59:31 Info: cpu: # 2025.04.24 15:59:30 (*) Starting Nios II generation
+Info: 2025.04.24.15:59:31 Info: cpu: # 2025.04.24 15:59:30 (*)   Elaborating CPU configuration settings
+Info: 2025.04.24.15:59:31 Info: cpu: # 2025.04.24 15:59:30 (*)   Creating all objects for CPU
+Info: 2025.04.24.15:59:31 Info: cpu: # 2025.04.24 15:59:31 (*)   Generating RTL from CPU objects
+Info: 2025.04.24.15:59:31 Info: cpu: # 2025.04.24 15:59:31 (*)   Creating plain-text RTL
+Info: 2025.04.24.15:59:31 Info: cpu: # 2025.04.24 15:59:31 (*) Done Nios II generation
+Info: 2025.04.24.15:59:31 Info: cpu: Done RTL generation for module 'nios_system_nios2_gen2_0_cpu'
+Info: 2025.04.24.15:59:31 Info: cpu: "nios2_gen2_0" instantiated altera_nios2_gen2_unit "cpu"
+Info: 2025.04.24.15:59:31 Info: nios2_gen2_0_data_master_translator: "mm_interconnect_0" instantiated altera_merlin_master_translator "nios2_gen2_0_data_master_translator"
+Info: 2025.04.24.15:59:31 Info: jtag_uart_0_avalon_jtag_slave_translator: "mm_interconnect_0" instantiated altera_merlin_slave_translator "jtag_uart_0_avalon_jtag_slave_translator"
+Info: 2025.04.24.15:59:31 Info: nios2_gen2_0_data_master_agent: "mm_interconnect_0" instantiated altera_merlin_master_agent "nios2_gen2_0_data_master_agent"
+Info: 2025.04.24.15:59:31 Info: jtag_uart_0_avalon_jtag_slave_agent: "mm_interconnect_0" instantiated altera_merlin_slave_agent "jtag_uart_0_avalon_jtag_slave_agent"
+Info: 2025.04.24.15:59:31 Info: jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo: "mm_interconnect_0" instantiated altera_avalon_sc_fifo "jtag_uart_0_avalon_jtag_slave_agent_rsp_fifo"
+Info: 2025.04.24.15:59:31 Info: router: "mm_interconnect_0" instantiated altera_merlin_router "router"
+Info: 2025.04.24.15:59:31 Info: router_001: "mm_interconnect_0" instantiated altera_merlin_router "router_001"
+Info: 2025.04.24.15:59:31 Info: router_002: "mm_interconnect_0" instantiated altera_merlin_router "router_002"
+Info: 2025.04.24.15:59:31 Info: router_003: "mm_interconnect_0" instantiated altera_merlin_router "router_003"
+Info: 2025.04.24.15:59:31 Info: cmd_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux"
+Info: 2025.04.24.15:59:31 Info: cmd_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "cmd_demux_001"
+Info: 2025.04.24.15:59:31 Info: cmd_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux"
+Info: 2025.04.24.15:59:31 Info: cmd_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "cmd_mux_001"
+Info: 2025.04.24.15:59:31 Info: Reusing file D:/GitHub/FPGA-Space-Invaders/nios_system/synthesis/submodules
+Info: 2025.04.24.15:59:31 Info: rsp_demux: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux"
+Info: 2025.04.24.15:59:31 Info: rsp_demux_001: "mm_interconnect_0" instantiated altera_merlin_demultiplexer "rsp_demux_001"
+Info: 2025.04.24.15:59:31 Info: rsp_mux: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux"
+Info: 2025.04.24.15:59:31 Info: Reusing file D:/GitHub/FPGA-Space-Invaders/nios_system/synthesis/submodules
+Info: 2025.04.24.15:59:31 Info: rsp_mux_001: "mm_interconnect_0" instantiated altera_merlin_multiplexer "rsp_mux_001"
+Info: 2025.04.24.15:59:31 Info: Reusing file D:/GitHub/FPGA-Space-Invaders/nios_system/synthesis/submodules
+Info: 2025.04.24.15:59:31 Info: crosser: "mm_interconnect_0" instantiated altera_avalon_st_handshake_clock_crosser "crosser"
+Info: 2025.04.24.15:59:32 Info: avalon_st_adapter: "mm_interconnect_0" instantiated altera_avalon_st_adapter "avalon_st_adapter"
+Info: 2025.04.24.15:59:32 Info: error_adapter_0: "avalon_st_adapter" instantiated error_adapter "error_adapter_0"
+Info: 2025.04.24.15:59:32 Info: nios_system: Done "nios_system" with 36 modules, 53 files
+Info: 2025.04.24.15:59:32 Info: qsys-generate succeeded.
+Info: 2025.04.24.15:59:32 Info: Finished: Create HDL design files for synthesis
+Info (11902): Backing up file "vga_clk.v" to "vga_clk.BAK.v"
+Info (11837): Started upgrading IP component ALTPLL with file "vga_clk.v"
+Info (11131): Completed upgrading IP component Qsys with file "nios_system.qsys"
+Info (11131): Completed upgrading IP component ALTPLL with file "vga_clk.v"
+Info (23030): Evaluation of Tcl script c:/intelfpga_lite/20.1/quartus/common/tcl/internal/ip_regen/ip_regen.tcl was successful
+Info: Quartus Prime Shell was successful. 0 errors, 1 warning
+    Info: Peak virtual memory: 4770 megabytes
+    Info: Processing ended: Thu Apr 24 15:59:34 2025
+    Info: Elapsed time: 00:01:17
+    Info: Total CPU time (on all processors): 00:01:47
+
+

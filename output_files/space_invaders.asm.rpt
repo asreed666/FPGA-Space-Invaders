@@ -1,6 +1,6 @@
 Assembler report for space_invaders
-Wed May 01 02:07:22 2019
-Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
+Thu Apr 24 16:57:55 2025
+Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
 ---------------------
@@ -11,7 +11,7 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
   3. Assembler Settings
   4. Assembler Encrypted IP Cores Summary
   5. Assembler Generated Files
-  6. Assembler Device Options: C:/Users/Brock/School/ECE385/ece385/FinalProject/output_files/space_invaders.sof
+  6. Assembler Device Options: D:/GitHub/FPGA-Space-Invaders/output_files/space_invaders.sof
   7. Assembler Messages
 
 
@@ -19,9 +19,9 @@ Quartus Prime Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2020  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -31,18 +31,19 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
 +---------------------------------------------------------------+
 ; Assembler Summary                                             ;
 +-----------------------+---------------------------------------+
-; Assembler Status      ; Successful - Wed May 01 02:07:22 2019 ;
+; Assembler Status      ; Successful - Thu Apr 24 16:57:55 2025 ;
 ; Revision Name         ; space_invaders                        ;
 ; Top-level Entity Name ; space_invaders                        ;
-; Family                ; Cyclone IV E                          ;
-; Device                ; EP4CE115F29C7                         ;
+; Family                ; MAX 10                                ;
+; Device                ; 10M50DAF484C6GES                      ;
 +-----------------------+---------------------------------------+
 
 
@@ -63,23 +64,23 @@ refer to the applicable agreement for further details.
 +--------+------------------------+--------------+
 
 
-+----------------------------------------------------------------------------------+
-; Assembler Generated Files                                                        ;
-+----------------------------------------------------------------------------------+
-; File Name                                                                        ;
-+----------------------------------------------------------------------------------+
-; C:/Users/Brock/School/ECE385/ece385/FinalProject/output_files/space_invaders.sof ;
-+----------------------------------------------------------------------------------+
++---------------------------------------------------------------+
+; Assembler Generated Files                                     ;
++---------------------------------------------------------------+
+; File Name                                                     ;
++---------------------------------------------------------------+
+; D:/GitHub/FPGA-Space-Invaders/output_files/space_invaders.sof ;
++---------------------------------------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------+
-; Assembler Device Options: C:/Users/Brock/School/ECE385/ece385/FinalProject/output_files/space_invaders.sof ;
-+----------------+-------------------------------------------------------------------------------------------+
-; Option         ; Setting                                                                                   ;
-+----------------+-------------------------------------------------------------------------------------------+
-; JTAG usercode  ; 0x007F2F08                                                                                ;
-; Checksum       ; 0x007F2F08                                                                                ;
-+----------------+-------------------------------------------------------------------------------------------+
++-----------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/GitHub/FPGA-Space-Invaders/output_files/space_invaders.sof ;
++----------------+------------------------------------------------------------------------+
+; Option         ; Setting                                                                ;
++----------------+------------------------------------------------------------------------+
+; JTAG usercode  ; 0x00509C7F                                                             ;
+; Checksum       ; 0x00509C7F                                                             ;
++----------------+------------------------------------------------------------------------+
 
 
 +--------------------+
@@ -87,16 +88,16 @@ refer to the applicable agreement for further details.
 +--------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Assembler
-    Info: Version 18.0.0 Build 614 04/24/2018 SJ Lite Edition
-    Info: Processing started: Wed May 01 02:07:18 2019
+    Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
+    Info: Processing started: Thu Apr 24 16:57:52 2025
 Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off space_invaders -c space_invaders
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (115031): Writing out detailed assembly data for power analysis
 Info (115030): Assembler is generating device programming files
 Info: Quartus Prime Assembler was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4725 megabytes
-    Info: Processing ended: Wed May 01 02:07:22 2019
-    Info: Elapsed time: 00:00:04
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Peak virtual memory: 4709 megabytes
+    Info: Processing ended: Thu Apr 24 16:57:55 2025
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
